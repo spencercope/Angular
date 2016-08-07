@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
+
+#myCalc { 
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    max-width: 800px;
+}
+
+#myCalc main { 
+    background-color: darkgray;
+    max-width: 800px; 
+    margin: auto; 
+}
+
+
+#myCalc main section {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 110px;
+    color:blue;
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    background-size: 63px 100px;
+}
+
+#myCalc main div[class="result"] {
+    padding-top: 500px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#myCalc form input {
+    text-align: right;
+    width: 60px;
+}
+
+#myCalc form select {
+    width: 120px;
+}
+
+
+
+
+
+

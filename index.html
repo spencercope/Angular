@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="myCalc">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="assets\calc.css">
+      <script type="text/javascript" src="assets/angular.min.js"></script>
+      <script type="text/javascript" src="assets/calc.js"></script>
+      <title>Cacluate My Grade</title>
+    </head>
+    
+    <body>
+        <div id="myCalc" ng-controller="calcController">
+            <main>
+                <section class="category">
+                    <h4>Category</h4>
+                    <form>
+                        <select ng-model="cat1" ng-options="o as o for o in categoryOptions">
+                        </select>
+                    </form>
+                    <br></br>
+                    <form>
+                       <select ng-model="cat2" ng-options="o as o for o in categoryOptions">
+                        </select>
+                    </form>
+                    <br></br>
+                    <form>
+                        <select ng-model="cat3" ng-options="o as o for o in categoryOptions">
+                        </select>
+                    </form>
+                    <br></br>
+                    <form>
+                        <select ng-model="cat4" ng-options="o as o for o in categoryOptions">
+                        </select>
+                    </form>   
+                </section>
+                <section class="currentPerc">
+                    <h4>Grade Percentage</h4>
+                    <form>
+                        <input type="number" ng-change="calc()" ng-model="gp1" value="{{gp1}}">%
+                    </form>
+                    <br></br>
+                    <form>
+                        <input type="number" ng-change="calc()" ng-model="gp2" value="{{gp2}}">%
+                    </form>
+                    <br></br>
+                    <form>
+                        <input type="number" ng-change="calc()" ng-model="gp3" value="{{gp3}}">%
+                    </form>
+                    <br></br>
+                    <form>
+                        <input type="number" ng-change="calc()" ng-model="gp4" value="{{gp4}}">%
+                    </form>  
+                </section>
+                <section class="weight">
+                    <h4>Weight</h4>
+                    <form>
+                        <input type="number" ng-change="calc()" ng-model="weight1" value="{{weight1}}">%
+                    </form>
+                    <br></br>
+                    <form>
+                        <input type="number" ng-change="calc()" ng-model="weight2" value="{{weight2}}">%
+                    </form>
+                    <br></br>
+                    <form>
+                        <input type="number" ng-change="calc()" ng-model="weight3" value="{{weight3}}">%
+                    </form> 
+                    <br></br>
+                    <form>
+                        <input type="number" ng-change="calc()" ng-model="weight4" value="{{weight4}}">%
+                    </form> 
+                    <p>{{totalWeight}}</p>
+                </section>
+                <section class="contribution">
+                    <h4>Contribution</h4>
+                    <form>
+                        <input type="number" ng-model="contrib1" value="{{contrib1}}">
+                    </form>
+                    <br></br>
+                    <form>
+                        <input type="number" ng-model="contrib2" value="{{contrib2}}">
+                    </form>
+                    <br></br>
+                    <form>
+                        <input type="number" ng-model="contrib3" value="{{contrib3}}">
+                    </form>
+                    <br></br>
+                    <form>
+                        <input type="number" ng-model="contrib4" value="{{contrib4}}">
+                    </form>
+                </section>
+
+                <div class="result">
+                    <h4>Your Grade</h4>
+                    <p>{{grade}} %</p>
+                </div>
+            </main>
+
+
+            
+        </div>    
+    
+    </body>
+</html>
