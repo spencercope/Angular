@@ -95,7 +95,12 @@
                     <p>{{grade}} %</p>
                 </div>
 
-                <button type="button" id="zerButton">Set to Zero</button>
+                <button ng-click="count = count + 1" ng-init="count=0">
+                  Increment
+                </button>
+                <span>
+                  count: {{count}}
+                </span>
 
             </main>
 
