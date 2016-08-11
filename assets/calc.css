@@ -43,7 +43,10 @@
     width: 120px;
 }
 
-
+#myCalc button {
+    float: right;
+    width: 100px;
+}
 
 
 

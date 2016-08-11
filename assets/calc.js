@@ -49,6 +49,32 @@
         
         $scope.calc();
         
+        
+        app.contoller('button', function ($scope){
+            $scope.setZero();
+            
+            $scope.setZero = function(){
+            $scope.gp1 = '0';
+            $scope.gp2 = '0';
+            $scope.gp3 = '0';
+            $scope.gp4 = '0';
+
+            $scope.weight1 = '0';
+            $scope.weight2 = '0';
+            $scope.weight3 = '0';
+            $scope.weight4 = '0';
+            
+            $scope.contrib1 = '';
+            $scope.contrib2 = '';
+            $scope.contrib3 = '';
+            $scope.contrib4 = '';
+        }
+        });
+        
+        
+
+        
+        
     }]);
     
     
