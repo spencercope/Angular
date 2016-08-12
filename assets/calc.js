@@ -11,24 +11,32 @@
         $scope.cat2 = 'categroy2';
         $scope.cat3 = 'category3';
         
-        $scope.gp1 = '90';
-        $scope.gp2 = '95';
-        $scope.gp3 = '100';
-        $scope.gp4 = '0';
+        $scope.gps = [
+            { index: "1", initial: "90" },
+            { index: "2", initial: "95" },
+            { index: "3", initial: "100" },
+            { index: "4", initial: "0" },
+        ]
         
-        $scope.weights = '50';
+        $scope.weights = [
+            { index: "1", initial: "90" },
+            { index: "2", initial: "95" },
+            { index: "3", initial: "100" },
+            { index: "4", initial: "0" },
+        ]
         
-        $scope.contrib1 = '';
-        $scope.contrib2 = '';
-        $scope.contrib3 = '';
-        $scope.contrib4 = '';
+        $scope.contribs = [
+            { index: "1", initial: "90" },
+            { index: "2", initial: "95" },
+            { index: "3", initial: "100" },
+            { index: "4", initial: "0" },
+        ]
         
         $scope.grade = '';
         
         $scope.totalWeight = '100';
         
         $scope.calc = function(){
-            
             if ( $scope.gp1 > 100) { $scope.gp1 = 100; }
             if ( $scope.gp2 > 100) { $scope.gp2 = 100; }
             if ( $scope.gp3 > 100) { $scope.gp3 = 100; }
