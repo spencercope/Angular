@@ -16,10 +16,7 @@
         $scope.gp3 = '100';
         $scope.gp4 = '0';
         
-        $scope.weight1 = '50';
-        $scope.weight2 = '25';
-        $scope.weight3 = '25';
-        $scope.weight4 = '0';
+        $scope.weights = '50';
         
         $scope.contrib1 = '';
         $scope.contrib2 = '';
